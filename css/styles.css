@@ -491,6 +491,7 @@ h1 {
 }
 
 .project-item {
+  position: relative;
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -499,6 +500,11 @@ h1 {
 .project-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-item:hover .project-img-text,
+.project-item:hover .project-img-text {
+  transform: translateY(0);
 }
 
 .project-item:nth-child(3n + 0) {
@@ -519,6 +525,21 @@ h1 {
 .portfolio-link {
   display: block;
   text-decoration: var(--decoration-none);
+}
+
+.project-img-text {
+  transition: transform 250ms;
+  padding: 64px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
 }
 
 .project-title {
