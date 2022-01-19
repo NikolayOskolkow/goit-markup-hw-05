@@ -522,8 +522,8 @@ h1 {
   margin-bottom: 30px;
 }
 
-.project-item:hover,
-.project-item:focus {
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -554,7 +554,7 @@ h1 {
 }
 
 .portfolio-link {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   text-decoration: var(--decoration-none);
 }
@@ -572,7 +572,7 @@ h1 {
   top: 0;
   left: 0;
   background-color: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
+  transform: translateY(101%);
 }
 
 .project-title {
