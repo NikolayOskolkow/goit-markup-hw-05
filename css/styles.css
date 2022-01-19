@@ -3,7 +3,8 @@
   --title-color: #212121;
   --decoration-none: none;
   --link-accent-color: #2196f3;
-  --hover-time: color 250ms linear;
+  --hover-color-time: color 2000ms linear;
+  --hover-backgroundcolor-time: background-color 2000ms linear;
 }
 
 body {
@@ -26,6 +27,7 @@ ol {
 }
 
 button {
+  transition: var(--hover-backgroundcolor-time), var(--hover-color-time);
   cursor: pointer;
 }
 
@@ -111,7 +113,7 @@ li {
 }
 
 .header-link {
-  transition: var(--hover-time);
+  transition: var(--hover-color-time);
   display: block;
   padding-bottom: 32px;
   padding-top: 32px;
@@ -129,7 +131,7 @@ li {
   position: absolute;
   background-color: var(--link-accent-color);
   left: 0;
-  bottom: 0;
+  bottom: -1px;
 }
 
 .nav-contacts {
@@ -155,7 +157,7 @@ li {
 }
 
 .header-contacts {
-  transition: var(--hover-time);
+  transition: var(--hover-color-time);
   display: flex;
   text-align: center;
   margin-left: auto;
@@ -387,6 +389,7 @@ h1 {
 }
 
 .team-social-link {
+  transition: var(--hover-backgroundcolor-time);
   width: 44px;
   height: 44px;
   background-color: #ffffff;
@@ -438,6 +441,7 @@ h1 {
 }
 
 .customers-link {
+  transition: fill 250ms linear;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
@@ -550,6 +554,7 @@ h1 {
 }
 
 .portfolio-link {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   text-decoration: var(--decoration-none);
 }
@@ -613,6 +618,7 @@ h1 {
 }
 
 .address-item-map {
+  transition: var(--hover-color-time);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -622,6 +628,7 @@ h1 {
 }
 
 .address-item {
+  transition: var(--hover-color-time);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -643,6 +650,7 @@ h1 {
 }
 
 .footer-social-link {
+  transition: var(--hover-backgroundcolor-time);
   display: flex;
   justify-content: center;
   align-items: center;
